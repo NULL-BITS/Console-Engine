@@ -1,4 +1,8 @@
 #!/bin/bash
 chmod +x *
-pip -r install requirements.txt
+pip install requests
+pip install idna
+pip install certifi
+pip install chardet
 python3 install.py
+

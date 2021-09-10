@@ -11,17 +11,13 @@ class logo:
   @classmethod
   def tool_header(self):
     print(f'''\007
-
 {yellow}
-         _____           _    __  __
-        |_   _|__   ___ | |   \ \/ /
-          | |/ _ \ / _ \| |____\  /
-          | | (_) | (_) | |____/  \    
-          |_|\___/ \___/|_|   /_/\_\ {purple}v2.1
+       
+
 
 
 {cyan} =============================================
-{yellow}|          Install Best Hacking Tool          |
+{yellow}|                                          |
 {cyan} ============================================={nc}''')
 
   @classmethod
@@ -34,7 +30,7 @@ class logo:
   def not_ins(self):
     self.tool_header()
     print (f'''
-{cyan}  [ + ]  {red}We can't install Tool-X.
+{cyan}  [ + ]  {red}We can't install ConsoleEngine.
 {cyan}  [ + ]  {red}There are some error.
 {cyan}  [ + ]  {red}Please try again after some time!''')
     self.tool_footer()
@@ -48,7 +44,6 @@ class logo:
 {yellow}  [ + ] {green}Use it legal purpose only.
 {yellow}  [ + ] {green}We are not responsible for your actions.
 {yellow}  [ + ] {green}Do not do things that are forbidden.
-
 {red} If you are installing this tool.
  that means you are agree with all terms.''')
     self.tool_footer()
@@ -57,16 +52,16 @@ class logo:
   def ins_sc(self):
     self.tool_header()
     print (f'''
-{yellow}    [ + ] {green}Tool-X installed successfully.
-{yellow}    [ + ] {green}To run Tool-X,
-{yellow}    [ + ] {green}Type Tool-X in your terminal.''')
+{yellow}    [ + ] {green}ConsoleEngine installed successfully.
+{yellow}    [ + ] {green}To run ConsoleEngine,
+{yellow}    [ + ] {green}Type ConsoleEngine in your terminal.''')
     self.tool_footer()
 
   @classmethod
   def update(self):
     self.tool_header()
     print (f'''
-{yellow}  [ 1 ] {green}Update your Tool-X.
+{yellow}  [ 1 ] {green}Update your ConsoleEngine.
 {yellow}  [ 0 ] {green}For Back.{nc}''')
     self.tool_footer()
 
@@ -74,7 +69,7 @@ class logo:
   def updated(self):
     self.tool_header()
     print (f'''
-{yellow}      [ + ] {green}Tool-X Updated Successfully.
+{yellow}      [ + ] {green}ConsoleEngine Updated Successfully.
 {yellow}      [ + ] {green}Press Enter to continue.{nc}''')
     self.tool_footer()
 
@@ -91,7 +86,7 @@ class logo:
   def update_error(self):
     self.tool_header()
     print (f'''
-{red}  [ + ]  {red}We can't Update Tool-X.\033[1;m
+{red}  [ + ]  {red}We can't Update ConsoleEngine.\033[1;m
 {red}  [ + ]  {red}Please try again after some time.{nc}''')
     self.tool_footer()
 
@@ -100,12 +95,11 @@ class logo:
   def about(self,total):
     self.tool_header()
     print (f'''
-{yellow}       [+] Tool Name :- {green}Tool-X
+{yellow}       [+] Tool Name :- {green}ConsoleEngine
 {yellow}       [+] Author :- {green}Rajkumar Dusad
 {yellow}       [+] Latest Update :- {green}23/3/2019.\033[1;m
 {yellow}       [+] Tools :- {green}total {total} tools.\033[1;m
-
-{yellow} [+] {green}Tool-x is automatic tool installer.
+{yellow} [+] {green}ConsoleEngine is automatic tool installer.
 {yellow} [+] {green}Made for termux and linux based system.
 {red} [+] Note :- Use this tool at your own risk.''')
     self.tool_footer()
@@ -153,7 +147,7 @@ class logo:
   @classmethod
   def updating(self):
     print (f"""{yellow} =============================================
-{green}|______________ Updating Tool-X ______________|
+{green}|______________ Updating ConsoleEngine ______________|
  {yellow}============================================={nc}""")
 
   @classmethod
@@ -168,7 +162,7 @@ class logo:
     print (f'''
 {yellow}  [ 1 ] {green}Show all tools.{yellow} [ {purple}{total} tools{yellow} ]
 {yellow}  [ 2 ] {green}Tools Category.
-{yellow}  [ 3 ] {green}Update Tool-X.
+{yellow}  [ 3 ] {green}Update ConsoleEngine.
 {yellow}  [ 4 ] {green}About Us.
 {yellow}  [ x ] {green}For Exit.''')
     self.tool_footer()
@@ -177,6 +171,6 @@ class logo:
   def exit(self):
     self.tool_header()
     print (f'''
-{yellow}         [ + ] {green}Thanks for using Tool-X
+{yellow}         [ + ] {green}Thanks for using ConsoleEngine
 {yellow}         [ + ] {green}Good Bye.....! ){nc}''')
     self.tool_footer()

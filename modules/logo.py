@@ -95,12 +95,7 @@ class logo:
   def about(self,total):
     self.tool_header()
     print (f'''
-{yellow}       [+] Tool Name :- {green}ConsoleEngine
-{yellow}       [+] Author :- {green}Rajkumar Dusad
-{yellow}       [+] Latest Update :- {green}23/3/2019.\033[1;m
-{yellow}       [+] Tools :- {green}total {total} tools.\033[1;m
-{yellow} [+] {green}ConsoleEngine is automatic tool installer.
-{yellow} [+] {green}Made for termux and linux based system.
+{yellow}       [+] Tool Name :- {green}ConsoleEngine.
 {red} [+] Note :- Use this tool at your own risk.''')
     self.tool_footer()
 

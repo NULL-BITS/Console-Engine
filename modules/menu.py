@@ -25,7 +25,7 @@ class main:
         num+=1
       print(f"")
       logo.back()
-      cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+      cmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
       if cmd=="00" or cmd=="back":
         self.menu()
         break
@@ -56,7 +56,7 @@ class main:
         num+=1
       print(f"")
       logo.back()
-      cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+      cmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
       if cmd=="00" or cmd=="back":
         self.menu()
         break
@@ -78,7 +78,7 @@ class main:
                   cnt+=1
               print(f"")
               logo.back()
-              tcmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+              tcmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
               if tcmd=="00" or tcmd=="back":
                 break
               else:
@@ -106,54 +106,54 @@ class main:
     while True:
       os.system("clear")
       logo.update()
-      cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+      cmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
       if cmd=="1":
         system=sys()
         if system.connection():
           os.system("clear")
           logo.updating()
           if system.sudo != None:
-            if os.path.exists(system.home+"/Tool-X"):
+            if os.path.exists(system.home+"/ConsoleEngine"):
               pass
             else:
-              os.system(system.sudo+" git clone https://github.com/rajkumardusad/Tool-X.git "+system.home+"/Tool-X")
-            if os.path.exists(system.home+"/Tool-X/install.aex"):
-              os.system("cd "+system.home+"/Tool-X && "+system.sudo+" sh install.aex")
-              if os.path.exists(system.bin+"/Tool-X") and os.path.exists(system.conf_dir+"/Tool-X"):
+              os.system(system.sudo+" git clone https://github.com/rajkumardusad/ConsoleEngine.git "+system.home+"/ConsoleEngine")
+            if os.path.exists(system.home+"/ConsoleEngine/install.aex"):
+              os.system("cd "+system.home+"/ConsoleEngine && "+system.sudo+" sh install.aex")
+              if os.path.exists(system.bin+"/ConsoleEngine") and os.path.exists(system.conf_dir+"/ConsoleEngine"):
                 os.system("clear")
                 logo.updated()
-                cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+                cmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
               else:
                 os.system("clear")
                 logo.update_error()
-                cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+                cmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
             else:
               os.system("clear")
               logo.update_error()
-              cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+              cmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
           else:
-            if os.path.exists(system.home+"/Tool-X"):
+            if os.path.exists(system.home+"/ConsoleEngine"):
               pass
             else:
-              os.system("git clone https://github.com/rajkumardusad/Tool-X.git "+system.home+"/Tool-X")
-            if os.path.exists(system.home+"/Tool-X/install.aex"):
-              os.system("cd "+system.home+"/Tool-X && sh install.aex")
-              if os.path.exists(system.bin+"/Tool-X") and os.path.exists(system.conf_dir+"/Tool-X"):
+              os.system("git clone https://github.com/rajkumardusad/ConsoleEngine.git "+system.home+"/ConsoleEngine")
+            if os.path.exists(system.home+"/ConsoleEngine/install.aex"):
+              os.system("cd "+system.home+"/ConsoleEngine && sh install.aex")
+              if os.path.exists(system.bin+"/ConsoleEngine") and os.path.exists(system.conf_dir+"/ConsoleEngine"):
                 os.system("clear")
                 logo.updated()
-                cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+                cmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
               else:
                 os.system("clear")
                 logo.update_error()
-                cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+                cmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
             else:
               os.system("clear")
               logo.update_error()
-              cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+              cmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
         else:
           os.system("clear")
           logo.nonet()
-          tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+          tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
       elif cmd=="0" or cmd=="back":
         self.menu()
         break
@@ -167,7 +167,7 @@ class main:
       total=len(tool.names)
       os.system("clear")
       logo.about(total)
-      cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+      cmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
       self.menu()
       break
 
@@ -178,7 +178,7 @@ class main:
       total=len(tool.names)
       os.system("clear")
       logo.menu(total)
-      cmd=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+      cmd=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
       if cmd == "1":
         self.install_tools(self)
         break
@@ -195,16 +195,16 @@ class main:
         os.system("clear")
         logo.exit()
         break
-      elif cmd=="rm -t" or cmd=="rm -T" or cmd=="uninstall tool-x" or cmd=="unistall Tool-X":
+      elif cmd=="rm -t" or cmd=="rm -T" or cmd=="uninstall ConsoleEngine" or cmd=="unistall ConsoleEngine":
         system=sys()
         if system.sudo:
-          os.system(system.sudo+" rm -rf "+system.bin+"/Tool-X")
+          os.system(system.sudo+" rm -rf "+system.bin+"/ConsoleEngine")
           os.system(system.sudo+" rm -rf "+system.bin+"/toolx")
-          os.system(system.sudo+" rm -rf "+system.conf_dir+"/Tool-X")
+          os.system(system.sudo+" rm -rf "+system.conf_dir+"/ConsoleEngine")
         else:
-          os.system("rm -rf "+system.bin+"/Tool-X")
+          os.system("rm -rf "+system.bin+"/ConsoleEngine")
           os.system("rm -rf "+system.bin+"/toolx")
-          os.system("rm -rf "+system.conf_dir+"/Tool-X")
+          os.system("rm -rf "+system.conf_dir+"/ConsoleEngine")
         os.system("clear")
         logo.exit()
         break
@@ -219,9 +219,9 @@ class tools:
   category_data=None
   def __init__(self):
     system=sys()
-    with open(system.conf_dir+"/Tool-X/core/data.json") as data_file:
+    with open(system.conf_dir+"/ConsoleEngine/core/data.json") as data_file:
       self.data=json.load(data_file)
-    with open(system.conf_dir+"/Tool-X/core/cat.json") as cat_file:
+    with open(system.conf_dir+"/ConsoleEngine/core/cat.json") as cat_file:
       self.category_data=json.load(cat_file)
     self.names=list(self.data.keys())
     self.category=list(self.category_data.keys())
@@ -248,7 +248,7 @@ class tools:
         if os.path.exists(system.bin+"/"+package_name):
           os.system("clear")
           logo.already_installed(name)
-          tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+          tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
         else:
           if system.sudo != None:
             os.system(system.sudo+" "+system.pac+" install "+package_name+" -y")
@@ -258,17 +258,17 @@ class tools:
           if os.path.exists(system.bin+"/"+package_name):
             os.system("clear")
             logo.installed(name)
-            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+            tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
           else:
             os.system("clear")
             logo.not_installed(name)
-            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+            tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
 
       elif package_manager=="git":
         if os.path.exists(system.home+"/"+package_name):
           os.system("clear")
           logo.already_installed(name)
-          tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+          tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
         else:
           if system.sudo != None:
             os.system(system.sudo+" git clone "+url+" "+system.home+"/"+package_name)
@@ -278,17 +278,17 @@ class tools:
           if os.path.exists(system.home+"/"+package_name):
             os.system("clear")
             logo.installed(name)
-            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+            tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
           else:
             os.system("clear")
             logo.not_installed(name)
-            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+            tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
 
       elif package_manager=="wget":
         if os.path.exists(system.home+"/"+package_name):
           os.system("clear")
           logo.already_installed(name)
-          tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+          tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
         else:
           if system.sudo != None:
             os.system(system.sudo+" wget "+url+" -o "+system.home+"/"+package_name)
@@ -298,17 +298,17 @@ class tools:
           if os.path.exists(system.home+"/"+package_name):
             os.system("clear")
             logo.installed(name)
-            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+            tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
           else:
             os.system("clear")
             logo.not_installed(name)
-            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+            tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
 
       elif package_manager=="curl":
         if os.path.exists(system.home+"/"+package_name):
           os.system("clear")
           logo.already_installed(name)
-          tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+          tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
         else:
           if system.sudo != None:
             os.system(system.sudo+" curl "+url+" -o "+system.home+"/"+package_name)
@@ -318,12 +318,12 @@ class tools:
           if os.path.exists(system.home+"/"+package_name):
             os.system("clear")
             logo.installed(name)
-            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+            tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
           else:
             os.system("clear")
             logo.not_installed(name)
-            tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+            tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
     else:
       os.system("clear")
       logo.nonet()
-      tmp=input(f"{blue}Tool-X{nc}@{blue}space {yellow}$ {nc}")
+      tmp=input(f"{blue}ConsoleEngine{nc}@{blue}space {yellow}$ {nc}")
